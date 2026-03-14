@@ -1,39 +1,93 @@
-# Mig
+# MigSpace
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+![Mig Logo](doc/image/logo01.png)
 
-#### 软件架构
-软件架构说明
+MigSpace is an open-source 3D authoring and presentation project inspired by JigSpace. It combines editor workflows and presentation workflows in a single Unity project and targets Windows, mobile platforms, and Vision Pro. On Windows and mobile, both editor mode and presentation mode are available. On Vision Pro, the project currently focuses on presentation mode.
 
+## Demo
 
-#### 安装教程
+<video src="doc/video/mig_demo.mp4" controls width="720"></video>
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## Overview
 
-#### 使用说明
+MigSpace provides the foundation for creating, editing, and presenting 3D content collaboratively. The project is under active development, with the core workflow already available and additional features still being refined.
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## Requirements
 
-#### 参与贡献
+- Unity `2023.3.0f1` or later
+- Git
+- Network access and credentials for the package repositories referenced in `Packages/manifest.json`
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+## Getting Started
 
+### 1. Clone the repository
 
-#### 特技
+```bash
+git clone <your-repository-url>
+cd MigSpace
+```
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+### 2. Resolve package dependencies
+
+This project currently references several custom packages through Git URLs in `Packages/manifest.json`, including:
+
+- `com.mig.core`
+- `com.mig.model`
+- `com.mig.presentation`
+
+Make sure your Git environment has access to the corresponding remote repositories before opening the project in Unity.
+
+### 3. Open the project in Unity
+
+Open the repository with Unity `2023.3.0f1` or newer, then load the main scene:
+
+`Assets/Scenes/ProjectView.unity`
+
+## Configuration
+
+Before running the project, update the FTP configuration in:
+
+`Packages/mig.core/Mig.Core/Runtime/FTP/FTPClient.cs`
+
+```csharp
+private static string FTPCONSTR = "";
+private static string FTPUSERNAME = "mig";
+private static string FTPPASSWORD = "migassets";
+```
+
+Replace these values with your own FTP server address and credentials.
+
+## Run the Project
+
+After the project finishes importing in Unity:
+
+1. Open `Assets/Scenes/ProjectView.unity`.
+2. Confirm the FTP configuration is correct.
+3. Click `Play` in the Unity Editor.
+
+## Build
+
+Before creating a build, make sure both scenes below are included in Unity Build Settings:
+
+- `Assets/Scenes/ProjectView.unity`
+- `Assets/Scenes/MainScene.unity`
+
+Then select the target platform in `Build Settings` and run a normal Unity build.
+
+## Project Structure
+
+![Project Structure](doc/image/mian_framework.png)
+
+## Contributing
+
+Pull requests are welcome. If you would like to contribute:
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Submit a pull request with a clear description of your changes.
+
+For questions or collaboration, contact [943264652@qq.com](mailto:943264652@qq.com).
+
+## License
+
+This project is licensed under the MIT License. See [`LICENSE`](LICENSE) for details.
