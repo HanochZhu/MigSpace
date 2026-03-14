@@ -4,3 +4,6 @@
 [submodule "Packages/mig.core"]
 	path = Packages/mig.core
 	url = git@github.com:HanochZhu/mig.core.git
+[submodule "Packages/mig.model"]
+	path = Packages/mig.model
+	url = git@github.com:HanochZhu/mig.model.git
