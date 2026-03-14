@@ -1,5 +1,7 @@
 # MigSpace
 
+[中文说明](README.CN.md)
+
 ![Mig Logo](doc/image/logo01.png)
 
 MigSpace is an open-source 3D authoring and presentation project inspired by JigSpace. It combines editor workflows and presentation workflows in a single Unity project and targets Windows, mobile platforms, and Vision Pro. On Windows and mobile, both editor mode and presentation mode are available. On Vision Pro, the project currently focuses on presentation mode.
