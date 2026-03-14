@@ -1,3 +1,6 @@
 [submodule "Packages/mig.presentation"]
 	path = Packages/mig.presentation
 	url = git@github.com:HanochZhu/mig.presentation.git
+[submodule "Packages/mig.core"]
+	path = Packages/mig.core
+	url = git@github.com:HanochZhu/mig.core.git
