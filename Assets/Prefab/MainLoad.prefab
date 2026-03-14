@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5123868922245743065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6790248944717059196}
+  - component: {fileID: 1642599837507812936}
+  - component: {fileID: 2918599431763523245}
+  - component: {fileID: 9173295565521901663}
+  m_Layer: 0
+  m_Name: MainLoad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6790248944717059196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5123868922245743065}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1642599837507812936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5123868922245743065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d57be528b9d78448aedceb812870f85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CameraOrbit: {fileID: 0}
+  annotationPrefab: {fileID: 3284485257017566831, guid: d87deb6d66072d7469bfcce16b3001c2, type: 3}
+  annotationPrefabParent: {fileID: 0}
+  moveSpeed: 1
+  rotationSpeed: 50
+  scaleSpeed: 1
+  activeFunction: 3
+  annotationPosition: {x: 0, y: 0, z: 0}
+  _currentTransformPivot: 0
+--- !u!114 &2918599431763523245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5123868922245743065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00a2d83069f010f419720217f201a50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialButtonPrefab: {fileID: 9217031505246267052, guid: c3bf1685f566e504fa55a6188391d8ed, type: 3}
+  PaintScrollView: {fileID: 0}
+  ScrollContent: {fileID: 0}
+  MaterialContentTransform: {fileID: 0}
+  colorInputField: {fileID: 0}
+  transparencySlider: {fileID: 0}
+  transparencyInputField: {fileID: 0}
+--- !u!114 &9173295565521901663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5123868922245743065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 402a053276c5fbb4ca22e77ce7b5280a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

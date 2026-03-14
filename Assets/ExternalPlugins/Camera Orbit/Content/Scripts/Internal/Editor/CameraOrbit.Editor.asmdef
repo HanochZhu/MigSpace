@@ -1,0 +1,18 @@
+{
+    "name": "CameraOrbit.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:90b59efe854377d45aaeae3ea7c6aa4e"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

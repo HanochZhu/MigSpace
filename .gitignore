@@ -1,0 +1,19 @@
+﻿Library
+.vs
+Temp
+obj
+Temp
+Logs
+*.csproj
+.vsconfig
+*.sln
+com.Tivadar.Best.HTTP.xml
+Assets/TriLib/TriLibSamples
+Assets/Camera Orbit/Example
+Assets/Camera Orbit/Example.meta
+build_win
+/.vscode
+Packages/com.cakeslice.outline-effect@5a1fa96bd2/.vscode
+Packages/com.cakeslice.outline-effect@5a1fa96bd2/Samples~
+win_build
+win_build.zip

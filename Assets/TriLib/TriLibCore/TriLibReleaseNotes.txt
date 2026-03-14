@@ -1,0 +1,10 @@
+﻿2.2.9
+Changelog:
+-Fixed FBX bind-pose matrix decomposition issue.
+-Fixed glTF2 default metallic/roughness value issue.
+-Fixed glTF2 blend-shape issue.
+-Fixed issues in OBJ, PLY, and STL readers where custom streams were closed automatically.
+-Fixed bug with bone weight assignment.
+-Fixed HDRP material mapper mask creation.
+-Fixed skinned mesh renderer bounds calculation.
+-Added CreateMaterialsForAllModels asset loader option. Turn on this field to make TriLib create materials for every loaded model, even models without an original material.
