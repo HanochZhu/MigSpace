@@ -90,7 +90,7 @@ Pull requests are welcome. If you would like to contribute:
 2. Create a feature branch.
 3. Submit a pull request with a clear description of your changes.
 
-For questions or collaboration, contact [943264652@qq.com](mailto:943264652@qq.com).
+For questions or collaboration, contact [943264652@qq.com](mailto:943264652@qq.com) or [44198864@qq.com](mailto:44198864@qq.com).
 
 ## License
 
